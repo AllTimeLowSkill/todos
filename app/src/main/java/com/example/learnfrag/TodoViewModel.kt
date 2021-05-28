@@ -9,9 +9,13 @@ class TodoViewModel : ViewModel() {
         for (i in 0 until 100) {
             val todo = Todo()
 
-            todo.title = "todo #${ i  }"
+            todo.title = "todo #${ i }"
 
             todos += todo
         }
+    }
+
+    fun setTodo(todo: Todo) {
+        todos += todo
     }
 }
